@@ -2,7 +2,13 @@
  This web app will help us to implement the image style transfer from one image to another.
  
 
-#### If you want to check out the paper you may access the following references;
+1. Model Used: 
+The code is using the "Arbitrary Image Stylization" model provided by Google Magenta through TensorFlow Hub. This model allows for arbitrary style transfer, meaning you can apply the style of one image onto another image regardless of their content.
+
+2. This model is trained on two datasets:
+  1. Imagenet
+  2. COCO (Common Obejct COntext)
+
 Based on the model code in [magenta](https://github.com/tensorflow/magenta/tree/master/magenta/models/arbitrary_image_stylization) and the publication:
 
 [Exploring the structure of a real-time, arbitrary neural artistic stylization

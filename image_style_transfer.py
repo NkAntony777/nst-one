@@ -1,6 +1,6 @@
 import functools
 import os
-
+from io import BytesIO
 import altair as alt
 import numpy as np
 import streamlit as st
@@ -32,7 +32,7 @@ def crop_center(image):
 
 @functools.lru_cache(maxsize=None)
 def load_image(uploaded_file, image_size=(256, 256), col=st):
-    img = Image.open(uploaded_file)
+    img = Image.open(BytesIO(uploaded_file.read()))
     img = tf.convert_to_tensor(img)
     img = crop_center(img)
     img = tf.image.resize(img, image_size)
