@@ -1,12 +1,12 @@
 import functools
 import os
-from io import BytesIO
 import altair as alt
 import numpy as np
 import streamlit as st
 import tensorflow as tf
 import tensorflow_hub as hub
 from PIL import Image
+
 
 hub_handle = 'https://tfhub.dev/google/magenta/arbitrary-image-stylization-v1-256/2'
 hub_module = hub.load(hub_handle)
