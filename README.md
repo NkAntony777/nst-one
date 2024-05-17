@@ -1,4 +1,4 @@
-# Neural-Sttyle-Transfer
+# Neural-Style-Transfer
  
 
 1. Model Used: 
